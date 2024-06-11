@@ -1,0 +1,20 @@
+{
+	"extends": "@tsconfig/svelte/tsconfig.json",
+	"compilerOptions": {
+		"strict": true,
+		"module": "ES2020",
+		"moduleResolution": "Node",
+		"lib": [
+			"DOM",
+			"ESNext",
+		],
+		"types": [
+			"node"
+		],
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"sourceMap": true
+	},
+	"include": ["src/**/*", "src/node_modules/**/*"],
+	"exclude": ["node_modules/*", "__sapper__/*", "static/*", "webpack.config.js"]
+}
